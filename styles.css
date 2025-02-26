@@ -1,0 +1,128 @@
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.layout {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 15%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    background: #ffffff2e;
+    color: rgba(37, 37, 37, 0.858);
+    padding: 10px;
+    height: 100vh;
+    position: absolute;
+    animation: fadeInLeft 1s ease-in-out;
+    
+}
+
+.sidebar img {
+    width: 180px;
+    height: 25vh;
+    border-radius: 90%;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li a {
+    color: rgb(30, 22, 22);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    width: 70%;
+   
+}
+
+.hero {
+    background: linear-gradient(135deg, #ffb97ce8, #ff758cbe), url(../Images/priaff23.jpg);
+    background-size: cover;
+    /* display: flex; */
+    flex-direction: column;
+    padding: 50px;
+    height: 45vh;
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.download-btn {
+    padding: 10px 15px;
+    background: white;
+    border: none;
+    color: #ff758c;
+    cursor: pointer;
+    /* vector-effect: 5px; */
+}
+
+.projects, .skills, .about, .contact {
+    margin-top: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.project-item {
+    background: linear-gradient(135deg, #ffb97ce8, #ff758cbe);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Fancy Keyframes Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
